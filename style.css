@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    background-image: url(./assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(18, 23, 37, 1);
+}
+.content {
+    min-height: 100%;
+    background-color: rgba(18, 23, 37, 0.9);
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 62px;
+    margin-bottom: 57px;
+}
+main {
+    text-align: center;
+    margin-bottom: 16px;
+    align-self: center;
+}
+main h1 {
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 38px;
+    font-weight: 100;
+    width: fit-content;
+    margin-bottom: 16px;
+    align-self: center;
+}
+main span {
+    color: rgba(84, 230, 175, 1);
+    display: block;
+    
+}
+main p {
+    color: rgba(194, 203, 229, 1);
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 33px;
+    font-weight: 100;
+    width: 327px;
+    letter-spacing: 0.2px;
+}
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    gap: 10px;
+}
+.logo1 {
+   width: 56px;
+   height: 17px; 
+}
+.logo2 {
+    width: 45px;
+    height: 17px;
+}
+.logo3 {
+    width: 73px;
+    height: 11px;
+}
+.logo4 {
+    width: 77px;
+    height: 15px;
+}
+.button_input {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    background-color: rgba(44, 52, 75, 1);
+    border: none;
+    margin-bottom: 16px;
+    padding-left: 32px;
+}
+.placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.button {
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    background-color: rgba(84, 230, 175, 1);
+    border: none;
+}
+.button h5 {
+    color: rgba(18, 23, 37, 1);
+    font-size: 14px;
+    font-weight: bold;
+}
+footer {
+    display: none;
+}
+@media (min-width: 768px) {
+    body {
+        background-image: url(./assets/tablet/image-host.jpg);
+        background-size: 491px 767px;
+        background-position: right 0;
+    }
+    .content {
+        background-color: rgba(18, 23, 37, 0.2);
+    }
+    header {
+        display: block;
+        padding-left: 39px;
+        padding-top: 50px;
+        margin-bottom: 0;
+    }
+    main {
+        background-color: rgba(18, 23, 37, 1);
+        padding-left: 39px;
+        height: 489px;
+        padding-top: 93px;
+        text-align: justify;
+        height: 509px;
+        margin-bottom: 0;
+        margin-right: 84px;
+        margin-top: 152px;
+        align-self: flex-start;
+    }
+    main h1 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 31px;
+    }
+    main p {
+        font-size: 18px;
+        width: 445px;
+        line-height: 28px;
+    }
+    .logo_buttons {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .button_input {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 64px;
+        position: relative;
+        height: 56px;
+        width: fit-content;
+    }
+    .placeholder {
+        margin-bottom: 0;
+        height: 56px;
+        width: 427px;
+    }
+    .logos {
+        margin-bottom: 0;
+        margin-right: 100px;
+    }
+    .button {
+        width: 162px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 2;
+        border: none;
+        height: 46px;
+        cursor: pointer;
+    }
+    .logo1 {
+        width: 96px;
+        height: 29px; 
+    }
+    .logo2 {
+        width: 77px;
+        height: 29px;
+    }
+    .logo3 {
+        width: 125px;
+        height: 18px;
+    }
+    .logo4 {
+        width: 129px;
+        height: 26px;
+    }
+    footer {
+        display: block;
+        width: 100%;
+        height: 260px;
+        
+        padding-top: 153px;
+        padding-left: 30px;
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        background-image: url(./assets/desktop/image-host.jpg);
+        background-size: 888px 640px;
+        background-position: right 0 top 130px;
+    }
+    header {
+        padding-left: 165px;
+        padding-top: 102px;
+    }
+    main {
+        margin-top: 131px;
+        align-self: start;
+        padding-left: 165px;
+        padding-top: 88px;
+        width: 900px;
+    }
+    main h1 {
+        font-size: 52px;
+    }
+    .button:hover {
+        background-color: rgba(179, 255, 226, 1);
+    }
+    footer {
+        padding-top: 0;
+        height: 130px;
+        position: relative;
+    }
+    .footer_logo {
+        position: absolute;
+        right: 0;
+        top: -70%;
+    }
+
+
+
+
+
+
+
+
+
+}
+
